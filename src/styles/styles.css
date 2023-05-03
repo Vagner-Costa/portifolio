@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --bg-pagina : #222020;
+    --font-titulo : 'Passion One', cursive;
+    --font-subtitulo: 'Bebas Neue', cursive;
+    --font-tags : 'Open Sans', sans-serif;
+    --cor-azul : rgb(72, 95, 196);
+    --cor-azulClaro : rgb(124, 185, 242);
+    --cor-marrom : rgb(169, 121, 89);
+    --cor-branco : #dedede;
+    --cor-roxo : rgb(216, 83, 199);
+    --cor-cinza : #737272;
+    --cor-amarelo : #e4ca05;
+    --cor-verde : rgb(79, 165, 79);
+    --cor-verdeLimao : #0f0;
+    --tam-font-imita-tags : 18px;
+
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+html{
+    overflow:auto;
+}
+
+.azul{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-azul)
+}
+.azulClaro{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-azulClaro)
+}
+.marrom{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-marrom)
+}
+.branco{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-branco)
+}
+.roxo{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-roxo)
+}
+.amarelo{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-amarelo)
+}
+.cinza{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-cinza)
+}
+.verde{
+    font-size : var(--tam-font-imita-tags);
+    font-family:var(--font-tags);
+    color:var(--cor-verde)
+}
+.espaco{
+    line-height:30px;
+}
+.abreFechaTag{
+    color:var(--cor-cinza);
+    font-size:50px;
+}
+.boxTxtSubtitulo{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.subtitulo{
+    font-family:var(--font-subtitulo);
+    color:var(--cor-branco);
+    font-size:70px;
+    line-height:60px;
+    margin:10px 0px;
+    text-decoration:underline;
+}
+@media screen and (min-width:0px) and (max-width:650px){
+    .subtitulo{
+        font-size:45px;
+        line-height:40px;
+        margin:10px 0px;
+    }
+}
