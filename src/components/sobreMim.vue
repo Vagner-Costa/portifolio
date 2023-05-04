@@ -2,8 +2,7 @@
     <div class="container">
         <TagAbertura 
             linha="9"
-            tag="article"
-            class="ok"
+            tag="section"
             tituloClass="boxSobreMim"
             identacao = "0"
             :left="store.getters.gettersIdentacao"
@@ -13,8 +12,8 @@
             <TagAbertura 
                 linha="10"
                 tag="h3"
-                class="ok"
                 tituloClass="subtitulo"
+                tituloId="subtitulo"
                 identacao = "1"
                 :left="store.getters.gettersIdentacao"
             ></TagAbertura>
@@ -34,10 +33,8 @@
 
         <TagAbertura 
             linha="12"
-            tag="div"
-            class="ok"
+            tag="article"
             tituloClass="boxTxt"
-            id="ok"
             tituloId="boxTxt"
             identacao = "1"
             :left="store.getters.gettersIdentacao"
@@ -46,9 +43,7 @@
         <TagAbertura 
             linha="13"
             tag="img"
-            src="ok"
             tituloSrc="../assets/foto/foto.jpeg"
-            alt="ok"
             tituloAlt="img"
             identacao = "2"
             :left="store.getters.gettersIdentacao"
@@ -56,7 +51,7 @@
 
         <div class="container_img_perfil">
             <div class="box_img_perfil">
-                <img src="../assets/foto/foto_eu.jpeg" alt="">
+                <img src="../assets/foto/foto_eu.jpeg" alt="foto_perfil">
             </div>
         </div>
 
@@ -64,7 +59,6 @@
             <TagAbertura 
                 linha="14"
                 tag="p"
-                class="ok"
                 tituloClass="txtSobreMim"
                 identacao = "2"
                 :left="store.getters.gettersIdentacao"
@@ -87,7 +81,6 @@
                 <TagAbertura 
                     linha="16"
                     tag="p"
-                    class="ok"
                     tituloClass="txtSobreMim"
                     identacao = "2"
                     :left="store.getters.gettersIdentacao"
@@ -112,7 +105,6 @@
                 <TagAbertura 
                     linha="18"
                     tag="p"
-                    class="ok"
                     tituloClass="txtSobreMim"
                     identacao = "2"
                     :left="store.getters.gettersIdentacao"
@@ -135,7 +127,6 @@
                 <TagAbertura 
                     linha="20"
                     tag="p"
-                    class="ok"
                     tituloClass="txtSobreMim"
                     identacao = "2"
                     :left="store.getters.gettersIdentacao"
@@ -153,7 +144,7 @@
                     visualizar=""
                 ></TagFechamento>
             <TagFechamento 
-                tag="div" 
+                tag="article" 
                 linha="22" 
                 identacao = "1"
                 :left="store.getters.gettersIdentacao"
@@ -162,7 +153,7 @@
         </div>
 
         <TagFechamento 
-            tag="article" 
+            tag="section" 
             linha="23" 
             identacao = "0"
             :left="store.getters.gettersIdentacao"
@@ -241,7 +232,7 @@
         text-align:justify;
         padding:10px 150px;
     }
-    @media screen and (min-width:0px) and (max-width:650px){
+    @media screen and (min-width:0px) and (max-width:600px){
         .boxLinhasTitulo{
             justify-content:center
         }
@@ -250,6 +241,11 @@
         }
         .txtDescricao{
             padding:10px 10px;
+        }
+    }
+    @media screen and (min-width:601px) and (max-width:768px){
+        .txtDescricao{
+            padding:10px 70px;
         }
     }
 </style>

@@ -5,6 +5,7 @@
   import sobreMim from '@/components/sobreMim.vue'
   import meusConhecimentos from '@/components/meusConhecimentos.vue'
   import meusProjetos from '@/components/meusProjetos.vue'
+  import compFinal from '@/components/compFinal.vue'
 
   const store = useStore()
 
@@ -22,6 +23,7 @@
     <sobreMim></sobreMim>
     <meusConhecimentos></meusConhecimentos>
     <meusProjetos></meusProjetos>
+    <compFinal></compFinal>
   </section>
 </template>
 

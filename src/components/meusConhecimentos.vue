@@ -2,8 +2,7 @@
     <section class="container">
         <TagAbertura 
             linha="24"
-            tag="article"
-            class="ok"
+            tag="section"
             tituloClass="containerTecnologias"
             identacao = "0"
             :left="store.getters.gettersIdentacao"
@@ -13,7 +12,6 @@
             <TagAbertura 
                 linha="25"
                 tag="div"
-                class="ok"
                 tituloClass="boxSubtitulo"
                 identacao = "1"
                 :left="store.getters.gettersIdentacao"
@@ -23,9 +21,7 @@
                 <TagAbertura 
                     linha="26"
                     tag="h3"
-                    class="ok"
                     tituloClass="subtitulo"
-                    id="ok"
                     tituloId="subtitulo"
                     identacao = "2"
                     :left="store.getters.gettersIdentacao"
@@ -56,7 +52,6 @@
         <TagAbertura 
             linha="29"
             tag="div"
-            class="ok"
             tituloClass="boxImgTecnologias"
             identacao = "1"
             :left="store.getters.gettersIdentacao"
@@ -65,11 +60,9 @@
         <TagAbertura 
             linha="30"
             tag="div"
-            class="ok"
             tituloClass="Tecnologias"
-            vfor="ok"
-            tecno="tecno"
-            tecnos="tecnos"
+            individual="tec"
+            array="tecnologias"
             identacao = "2"
             :left="store.getters.gettersIdentacao"
         ></TagAbertura>
@@ -77,15 +70,63 @@
         <TagAbertura 
             linha="31"
             tag="img"
-            class="ok"
             tituloClass="ImgTecnologias"
             srcBind="ok"
-            tituloSrc="tecno"
+            tituloSrc="tec"
             identacao = "3"
             :left="store.getters.gettersIdentacao"
         ></TagAbertura>
 
         <div class="boxTecnologias">
+            <div class="containerImg">
+                <div class="boxImg">
+                    <img src="@/assets/logos/vue.svg" alt="" class="imgTecnologias">
+                </div>
+                <p class="verde nome_tecno">&#60; !-- Vuejs -- &#62;</p>
+            </div>
+
+            <div class="containerImg">
+                <div class="boxImg">
+                    <img src="@/assets/logos/node.svg" alt="" class="imgTecnologias">
+                </div>
+                <p class="verde nome_tecno">&#60; !-- Nodejs -- &#62;</p>
+            </div>
+
+            <div class="containerImg">
+                <div class="boxImg">
+                    <img src="@/assets/logos/mongo.png" alt="" class="imgTecnologias">
+                </div>
+                <p class="verde nome_tecno">&#60; !-- Mongodb -- &#62;</p>
+            </div>
+
+            <div class="containerImg">
+                <div class="boxImg">
+                    <img src="@/assets/logos/javascript.svg" alt="" class="imgTecnologias">
+                </div>
+                <p class="verde nome_tecno">&#60; !-- Javascript -- &#62;</p>
+            </div>
+
+            <div class="containerImg">
+                <div class="boxImg">
+                    <img src="@/assets/logos/css3.svg" alt="" class="imgTecnologias">
+                </div>
+                <p class="verde nome_tecno">&#60; !-- CSS3 -- &#62;</p>
+            </div>
+
+            <div class="containerImg">
+                <div class="boxImg">
+                    <img src="@/assets/logos/tailwind-css.svg" alt="" class="imgTecnologias">
+                </div>
+                <p class="verde nome_tecno">&#60; !-- Tailwind -- &#62;</p>
+            </div>
+
+            <div class="containerImg">
+                <div class="boxImg">
+                    <img src="@/assets/logos/html5.svg" alt="" class="imgTecnologias">
+                </div>
+                <p class="verde nome_tecno">&#60; !-- HTML5 -- &#62;</p>
+            </div>
+
             <div class="containerImg">
                 <div class="boxImg">
                     <img src="@/assets/logos/git.svg" alt="" class="imgTecnologias">
@@ -104,61 +145,20 @@
                 </div>
                 <p class="verde nome_tecno">&#60; !-- Docker -- &#62;</p>
             </div>
-            <div class="containerImg">
-                <div class="boxImg">
-                    <img src="@/assets/logos/javascript.svg" alt="" class="imgTecnologias">
-                </div>
-                <p class="verde nome_tecno">&#60; !-- Javascript -- &#62;</p>
-            </div>
-            <div class="containerImg">
-                <div class="boxImg">
-                    <img src="@/assets/logos/vue.svg" alt="" class="imgTecnologias">
-                </div>
-                <p class="verde nome_tecno">&#60; !-- Vuejs -- &#62;</p>
-            </div>
-            <div class="containerImg">
-                <div class="boxImg">
-                    <img src="@/assets/logos/node.svg" alt="" class="imgTecnologias">
-                </div>
-                <p class="verde nome_tecno">&#60; !-- Nodejs -- &#62;</p>
-            </div>
+            
             <div class="containerImg">
                 <div class="boxImg">
                     <img src="@/assets/logos/react.svg" alt="" class="imgTecnologias">
                 </div>
                 <p class="verde nome_tecno">&#60; !-- React -- &#62;</p>
             </div>
-            <div class="containerImg">
-                <div class="boxImg">
-                    <img src="@/assets/logos/mongo.png" alt="" class="imgTecnologias">
-                </div>
-                <p class="verde nome_tecno">&#60; !-- Mongodb -- &#62;</p>
-            </div>
-            <div class="containerImg">
-                <div class="boxImg">
-                    <img src="@/assets/logos/axios.svg" alt="" class="imgTecnologias">
-                </div>
-                <p class="verde nome_tecno">&#60; !-- Axios -- &#62;</p>
-            </div>
+            
             <div class="containerImg">
                 <div class="boxImg">
                     <img src="@/assets/logos/react.svg" alt="" class="imgTecnologias">
                 </div>
                 <p class="verde nome_tecno">&#60; !-- React Native -- &#62;</p>
             </div>
-            <div class="containerImg">
-                <div class="boxImg">
-                    <img src="@/assets/logos/css3.svg" alt="" class="imgTecnologias">
-                </div>
-                <p class="verde nome_tecno">&#60; !-- CSS3 -- &#62;</p>
-            </div>
-            <div class="containerImg">
-                <div class="boxImg">
-                    <img src="@/assets/logos/html5.svg" alt="" class="imgTecnologias">
-                </div>
-                <p class="verde nome_tecno">&#60; !-- HTML5 -- &#62;</p>
-            </div>
-
         </div>
 
         <TagFechamento 
@@ -178,7 +178,7 @@
         ></TagFechamento>
 
         <TagFechamento 
-            tag="article" 
+            tag="section" 
             linha="34" 
             identacao = "0"
             :left="store.getters.gettersIdentacao"
@@ -267,7 +267,7 @@ import { useStore } from "vuex";
     .fume:hover{
         background-color:rgba(0,0,0,0.1);
     }
-    @media screen and (min-width:0px) and (max-width:650px){
+    @media screen and (min-width:0px) and (max-width:600px){
         .boxTxtConhecimentos{
             justify-content:center;
         }
@@ -282,6 +282,11 @@ import { useStore } from "vuex";
             min-width:180px;
             height:120px;
             min-height:120px;
+        }
+    }
+    @media screen and (min-width:601px) and (max-width:768px){
+        .boxTecnologias{
+            padding:10px 10px;
         }
     }
 

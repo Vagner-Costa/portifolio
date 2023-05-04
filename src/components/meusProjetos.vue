@@ -2,8 +2,7 @@
     <section class="container">
         <TagAbertura 
             linha="35"
-            tag="article"
-            class="ok"
+            tag="section"
             tituloClass="containerContatos"
             identacao = "0"
             :left="store.getters.gettersIdentacao"
@@ -13,7 +12,6 @@
             <TagAbertura 
                 linha="36"
                 tag="div"
-                class="ok"
                 tituloClass="boxSubtituloContatos"
                 identacao = "1"
                 :left="store.getters.gettersIdentacao"
@@ -23,9 +21,7 @@
                     <TagAbertura 
                         linha="37"
                         tag="h3"
-                        class="ok"
                         tituloClass="subtitulo"
-                        id="ok"
                         tituloId="subtitulo"
                         identacao = "2"
                         :left="store.getters.gettersIdentacao"
@@ -54,10 +50,8 @@
                    
             <TagAbertura 
                 linha="40"
-                tag="div"
-                class="ok"
+                tag="nav"
                 tituloClass="links"
-                id="ok"
                 tituloId="links"
                 identacao = "1"
                 :left="store.getters.gettersIdentacao"
@@ -67,55 +61,49 @@
                     <TagAbertura 
                         linha="41"
                         tag="a"
-                        href="ok"
                         tituloHref="https://www.linkedin.com/in/vagner-costa-desenvolvedor/"
                         identacao = "2"                       
                         :left="store.getters.gettersIdentacao"
                     ></TagAbertura>
                         <a class="branco linkedin" href="https://www.linkedin.com/in/vagner-costa-desenvolvedor/" target="_blank">Linkedin</a>
                     <TagFechamento 
-                        class="cancelLeft"
                         tag="a" 
-                        linha="" 
-                        identacao=""
-                        :left="null"
+                        linha="42" 
+                        identacao="2"
+                        :left="store.getters.gettersIdentacao"
                         visualizar=""
                     ></TagFechamento>
                 </div>
 
                 <div class="boxLinks">
                     <TagAbertura 
-                        linha="42"
+                        linha="43"
                         tag="a"
-                        href="ok"
                         tituloHref="https://github.com/Vagner-Costa"
                         identacao = "2"
                         :left="store.getters.gettersIdentacao"
                     ></TagAbertura>
                         <a class="branco github" href="https://github.com/Vagner-Costa" target="_Blank">Github</a>
                     <TagFechamento 
-                        class="cancelLeft"
                         tag="a" 
-                        linha="" 
-                        identacao = ""
-                        :left="null"
+                        linha="44" 
+                        identacao="2"
+                        :left="store.getters.gettersIdentacao"
                         visualizar=""
                     ></TagFechamento>
                 </div>
             <TagFechamento 
-                tag="div" 
-                linha="43" 
+                tag="nav" 
+                linha="45" 
                 identacao = "1"
                 :left="store.getters.gettersIdentacao"
                 visualizar=""
             ></TagFechamento>
 
             <TagAbertura 
-                linha="44"
+                linha="46"
                 tag="div"
-                class="ok"
                 tituloClass="contatos"
-                id="ok"
                 tituloId="contatos"
                 identacao = "1"
                 :left="store.getters.gettersIdentacao"
@@ -123,11 +111,9 @@
 
                 <div class="boxLinks">
                     <TagAbertura 
-                        linha="45"
+                        linha="47"
                         tag="img"
-                        src="ok"
                         tituloSrc="../assets/logos/email.png"
-                        alt="ok"
                         tituloAlt="img"
                         identacao = "2"
                         :left="store.getters.gettersIdentacao"
@@ -140,11 +126,9 @@
 
                 <div class="boxLinks">
                     <TagAbertura 
-                        linha="46"
+                        linha="48"
                         tag="img"
-                        src="ok"
                         tituloSrc="../assets/logos/whatsapp.png"
-                        alt="ok"
                         tituloAlt="img"
                         identacao="2"
                         :left="store.getters.gettersIdentacao"
@@ -157,15 +141,16 @@
 
         <TagFechamento 
             tag="div" 
-            linha="47" 
+            linha="49" 
             identacao = "1"
             :left="store.getters.gettersIdentacao"
             visualizar=""
         ></TagFechamento>
         </div>
+
         <TagFechamento 
-            tag="article" 
-            linha="48" 
+            tag="section" 
+            linha="50" 
             identacao = "0"
             :left="store.getters.gettersIdentacao"
             visualizar=""
@@ -225,7 +210,7 @@ import { useStore } from "vuex";
     .boxLinks{
         width:100%;
         display:flex;
-        flex-direction:row;
+        flex-direction:column;
         flex-wrap:wrap;
     }
     .cancelLeft{
@@ -252,8 +237,9 @@ import { useStore } from "vuex";
         font-size:24px;
         letter-spacing: 2px;
         cursor:pointer;
+        flex-wrap:wrap;
     }
-    @media screen and (min-width:0px) and (max-width:650px){
+    @media screen and (min-width:0px) and (max-width:600px){
         .boxTxtConhecimentos{
             justify-content:center;
         }
@@ -282,7 +268,7 @@ import { useStore } from "vuex";
             align-items:center;
         }
     }
-    @media screen and (min-width:651px) and (max-width:768px){
+    @media screen and (min-width:601px) and (max-width:768px){
         .boxTxtConhecimentos{
             justify-content:center;
         }
@@ -297,7 +283,7 @@ import { useStore } from "vuex";
             display:flex;
             flex-direction:column;
             justify-content:flex-start;
-            flex-wrap:no-wrap;
+            flex-wrap:wrap;
         }
         .linkedin, .github{
             display:flex;
@@ -309,6 +295,15 @@ import { useStore } from "vuex";
             display:flex;
             justify-content:center;
             align-items:center;
+        }
+    }
+    @media screen and (min-width:769px) and (max-width:992px){
+        .boxLinks{
+            width:100%;
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-start;
+            flex-wrap:wrap;
         }
     }
 </style>
