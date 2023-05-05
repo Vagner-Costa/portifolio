@@ -2,7 +2,7 @@
 Esse é o site do meu portifólio.
 Site todo construído  no Front-end com Vuejs, CSS3 e javascript
 Embora não tenha empregado muita tecnologia como design e nada de back-end foi um
-dos trabalhos que mais gostei do resultado final..
+dos trabalhos que mais gostei do resultado final...
 
 ## Project setup
 ```
